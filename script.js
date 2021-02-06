@@ -82,7 +82,7 @@ function printRepoData(rData){
     repoDiv.setAttribute("class","col-12 col-md-12 co-lg-6 col-xl-6 repoInfo")
     rowElement.append(repoDiv);
     let titleRepo = document.createElement("div");
-    titleRepo.setAttribute("class","col-8 col-sm-8 col-md-7 col-lg-8 col-xl-8 bg-dark text-white");
+    titleRepo.setAttribute("class","col-8 col-sm-8 col-md-7 col-lg- col-xl-8 bg-dark text-white");
     titleRepo.innerHTML = "Repo List";
     titleRepo.style.fontSize="25px"
     titleRepo.style.marginLeft="15%"
@@ -122,19 +122,16 @@ function modal(data){
     setModalDiv(modalDiv)
     let modalNextDiv = document.createElement("div")
     setModalNextDiv(modalNextDiv);
-    // let spanElement = document.createElement("span");
-    // spanElement.innerHTML = "&times;"
-    // //spanElement.style.backgroundColor="red"
-    // spanElement.style.margin="0px"
-    // spanElement.style.fontWeight = "bold"
-    // spanElement.style.color ="black";
-    // spanElement.style.float ="right";
-    // spanElement.style.fontSize ="30px"
-    // spanElement.style.fontWeight ="300px"
-    let spanElement = document.createElement("button");
-    spanElement.setAttribute("Class","btn btn-sm");
+    let spanElement = document.createElement("span");
+    spanElement.innerHTML = "&times;"
+    //spanElement.style.backgroundColor="red"
+    spanElement.style.margin="0px"
+    spanElement.style.fontWeight = "bold"
+    spanElement.style.color ="black";
     spanElement.style.float ="right";
-    spanElement.addEventListener("click",spanClick);
+    spanElement.style.fontSize ="30px"
+    spanElement.style.fontWeight ="300px"
+    spanElement.addEventListener("click",spanClick)
     
     modalDiv.style.display="block";
     document.body.append(modalDiv)
